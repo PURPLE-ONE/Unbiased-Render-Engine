@@ -1,0 +1,9 @@
+﻿Build started 5/1/2018 2:32:15 PM.
+     1>Project "C:\Minor\RenderEngine\RenderEngine\RenderEngine.vcxproj" on node 2 (Build target(s)).
+     1>Link:
+         RenderEngine.vcxproj -> C:\Minor\RenderEngine\x64\Debug\RenderEngine.exe
+     1>Done Building Project "C:\Minor\RenderEngine\RenderEngine\RenderEngine.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.36

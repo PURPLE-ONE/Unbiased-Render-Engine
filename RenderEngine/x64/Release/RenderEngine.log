@@ -1,0 +1,79 @@
+﻿Build started 4/30/2018 12:30:10 PM.
+     1>Project "C:\Users\Shubham Singh\Downloads\Compressed\OpenGL_Tutorial-master\OpenGL_Tutorial-master\RenderEngine\RenderEngine\RenderEngine.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         E:\Microsoft Visual Studio 2015\VC\bin\x86_amd64\CL.exe /c /I"C:\Users\Shubham Singh\Downloads\Compressed\OpenGL_Tutorial-master\OpenGL_Tutorial-master\RenderEngine\RenderEngine\dependencies\include" /Zi /nologo /W3 /WX- /sdl /O2 /Oi /GL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Release\\" /Fd"x64\Release\vc140.pdb" /Gd /TC /errorReport:prompt Dependencies\src\glad.c
+         glad.c
+         E:\Microsoft Visual Studio 2015\VC\bin\x86_amd64\CL.exe /c /I"C:\Users\Shubham Singh\Downloads\Compressed\OpenGL_Tutorial-master\OpenGL_Tutorial-master\RenderEngine\RenderEngine\dependencies\include" /Zi /nologo /W3 /WX- /sdl /O2 /Oi /GL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Release\\" /Fd"x64\Release\vc140.pdb" /Gd /TP /errorReport:prompt main.cpp src\graphics\buffers\indexbuffer.cpp src\graphics\buffers\vertexarray.cpp src\graphics\buffers\vertexbuffer.cpp src\graphics\camera.cpp src\graphics\mesh.cpp src\graphics\model.cpp src\graphics\shader.cpp src\graphics\texture.cpp src\graphics\window.cpp
+         main.cpp
+     1>main.cpp(37): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+     1>main.cpp(181): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+     1>main.cpp(209): warning C4305: 'argument': truncation from 'double' to 'float'
+     1>main.cpp(210): warning C4305: 'argument': truncation from 'double' to 'float'
+     1>main.cpp(217): warning C4305: 'argument': truncation from 'double' to 'float'
+     1>main.cpp(218): warning C4305: 'argument': truncation from 'double' to 'float'
+     1>main.cpp(225): warning C4305: 'argument': truncation from 'double' to 'float'
+     1>main.cpp(226): warning C4305: 'argument': truncation from 'double' to 'float'
+     1>main.cpp(233): warning C4305: 'argument': truncation from 'double' to 'float'
+     1>main.cpp(234): warning C4305: 'argument': truncation from 'double' to 'float'
+     1>main.cpp(242): warning C4305: 'argument': truncation from 'double' to 'float'
+     1>main.cpp(243): warning C4305: 'argument': truncation from 'double' to 'float'
+         indexbuffer.cpp
+         vertexarray.cpp
+         vertexbuffer.cpp
+         camera.cpp
+         mesh.cpp
+     1>src\graphics\mesh.cpp(51): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+         model.cpp
+         shader.cpp
+         texture.cpp
+         window.cpp
+     1>src\graphics\window.cpp(193): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+     1>src\graphics\window.cpp(194): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+     1>src\graphics\window.cpp(198): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+     1>src\graphics\window.cpp(199): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+     1>src\graphics\window.cpp(201): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+     1>src\graphics\window.cpp(202): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+     1>src\graphics\window.cpp(211): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+       Link:
+         E:\Microsoft Visual Studio 2015\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Shubham Singh\Downloads\Compressed\OpenGL_Tutorial-master\OpenGL_Tutorial-master\RenderEngine\x64\Release\RenderEngine.exe" /NOLOGO /LIBPATH:"C:\Users\Shubham Singh\Downloads\Compressed\OpenGL_Tutorial-master\OpenGL_Tutorial-master\RenderEngine\RenderEngine\dependencies\lib" "assimp-vc140-mt.lib" glfw3.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Shubham Singh\Downloads\Compressed\OpenGL_Tutorial-master\OpenGL_Tutorial-master\RenderEngine\x64\Release\RenderEngine.pdb" /OPT:REF /OPT:ICF /LTCG:incremental /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Shubham Singh\Downloads\Compressed\OpenGL_Tutorial-master\OpenGL_Tutorial-master\RenderEngine\x64\Release\RenderEngine.lib" /MACHINE:X64 x64\Release\glad.obj
+         x64\Release\main.obj
+         x64\Release\indexbuffer.obj
+         x64\Release\vertexarray.obj
+         x64\Release\vertexbuffer.obj
+         x64\Release\camera.obj
+         x64\Release\mesh.obj
+         x64\Release\model.obj
+         x64\Release\shader.obj
+         x64\Release\texture.obj
+         x64\Release\window.obj
+     1>main.obj : error LNK2001: unresolved external symbol glfwGetTime
+     1>model.obj : error LNK2001: unresolved external symbol aiGetMaterialTextureCount
+     1>model.obj : error LNK2001: unresolved external symbol "public: char const * __cdecl Assimp::Importer::GetErrorString(void)const " (?GetErrorString@Importer@Assimp@@QEBAPEBDXZ)
+     1>model.obj : error LNK2001: unresolved external symbol "public: struct aiScene const * __cdecl Assimp::Importer::ReadFile(char const *,unsigned int)" (?ReadFile@Importer@Assimp@@QEAAPEBUaiScene@@PEBDI@Z)
+     1>model.obj : error LNK2001: unresolved external symbol "public: __cdecl Assimp::Importer::~Importer(void)" (??1Importer@Assimp@@QEAA@XZ)
+     1>model.obj : error LNK2001: unresolved external symbol "public: __cdecl Assimp::Importer::Importer(void)" (??0Importer@Assimp@@QEAA@XZ)
+     1>model.obj : error LNK2001: unresolved external symbol aiGetMaterialTexture
+     1>window.obj : error LNK2001: unresolved external symbol glfwSwapBuffers
+     1>window.obj : error LNK2001: unresolved external symbol glfwSetFramebufferSizeCallback
+     1>window.obj : error LNK2001: unresolved external symbol glfwGetWindowUserPointer
+     1>window.obj : error LNK2001: unresolved external symbol glfwTerminate
+     1>window.obj : error LNK2001: unresolved external symbol glfwSetMouseButtonCallback
+     1>window.obj : error LNK2001: unresolved external symbol glfwPollEvents
+     1>window.obj : error LNK2001: unresolved external symbol glfwInit
+     1>window.obj : error LNK2001: unresolved external symbol glfwSetKeyCallback
+     1>window.obj : error LNK2001: unresolved external symbol glfwSetWindowShouldClose
+     1>window.obj : error LNK2001: unresolved external symbol glfwSetScrollCallback
+     1>window.obj : error LNK2001: unresolved external symbol glfwCreateWindow
+     1>window.obj : error LNK2001: unresolved external symbol glfwWindowHint
+     1>window.obj : error LNK2001: unresolved external symbol glfwSetInputMode
+     1>window.obj : error LNK2001: unresolved external symbol glfwMakeContextCurrent
+     1>window.obj : error LNK2001: unresolved external symbol glfwSetWindowUserPointer
+     1>window.obj : error LNK2001: unresolved external symbol glfwGetProcAddress
+     1>window.obj : error LNK2001: unresolved external symbol glfwSetCursorPosCallback
+     1>window.obj : error LNK2001: unresolved external symbol glfwWindowShouldClose
+     1>C:\Users\Shubham Singh\Downloads\Compressed\OpenGL_Tutorial-master\OpenGL_Tutorial-master\RenderEngine\x64\Release\RenderEngine.exe : fatal error LNK1120: 25 unresolved externals
+     1>Done Building Project "C:\Users\Shubham Singh\Downloads\Compressed\OpenGL_Tutorial-master\OpenGL_Tutorial-master\RenderEngine\RenderEngine\RenderEngine.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:24.10
